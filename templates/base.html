@@ -31,6 +31,12 @@
 
 {% block content %}
 <div class="container">
-    {% block page_content %} {% endblock %} 
+    {% block page_content %} 
+    {% endblock %} 
 </div>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+{{ moment.include_moment() }}
 {% endblock %}
